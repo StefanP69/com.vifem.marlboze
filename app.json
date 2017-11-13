@@ -1,0 +1,82 @@
+{
+  "id": "com.vifem.marlboze",
+  "version": "1.0.0",
+  "compatibility": ">=0.10",
+  "category": [
+    "appliances",
+    "lights"
+  ],
+  "name": {
+    "en": "Marlboze Z-wave",
+    "nl": "Marlboze Z-wave"
+  },
+  "description": {
+    "en": "Adds support for Marlboze Z-wave wireless door/window sensor",
+    "nl": ""
+  },
+  "author": {
+    "name": "Stefan Paulsson 171111"
+  },
+  "images": {
+    "large": "./assets/images/large.jpg",
+    "small": "./assets/images/small.jpg"
+  },
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "drivers": [
+    {
+      "id": "DP-07D",
+      "name": {
+        "en": "Door/Window Sensor",
+        "nl": "Deur/Raam Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 65535,
+        "productTypeId": 3,
+        "productId": [
+          4
+        ],
+        "learnmode": {
+          "image": "/drivers/DP-07D/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the button on your Door/Window Sensor rapidly 6-8 times",
+            "nl": "Druk 6-8 op de knop op de Deur/Raam Sensor"
+          }
+        },
+        "associationGroups": [
+          1,
+          2,
+          3
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact"
+      ],
+      "images": {
+        "large": "/drivers/DP-07D/assets/images/large.png",
+        "small": "/drivers/DP-07D/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "input_alarm_cancellation_delay",
+          "type": "number",
+          "label": {
+            "en": "Input Alarm Cancellation Delay",
+            "nl": "Ingang Alarm Annulerings Vertraging"
+          },
+          "hint": {
+            "en": "Sets the time (in seconds) then the alarm of the input will cancel.\nRange: 0 - 65535",
+            "nl": "Zet de tijd (in seconden) wanneer de ingangs alarm zal annuleren.\nBereik: 0 - 65535"
+          },
+          "attr": {
+            "min": 0,
+            "max": 65535
+          },
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
