@@ -11,7 +11,7 @@
     "nl": "Marlboze Z-wave"
   },
   "description": {
-    "en": "Adds support for Marlboze Z-wave wireless door/window sensor",
+    "en": "Adds support for Marlboze DP-07D Z-wave wireless door/window sensor",
     "nl": ""
   },
   "author": {
