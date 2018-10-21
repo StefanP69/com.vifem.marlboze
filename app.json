@@ -1,7 +1,11 @@
 {
   "id": "com.vifem.marlboze",
   "version": "1.0.0",
+<<<<<<< HEAD
   "compatibility": ">=1.6.0",
+=======
+  "compatibility": ">=1.6.0”,
+>>>>>>> c64f2c0c00f2f8c03b99f4982105d5bc445672bf
   "category": [
     "appliances",
     "lights"
@@ -15,7 +19,11 @@
     "nl": ""
   },
   "author": {
-    "name": "Stefan Paulsson 181021"
+<<<<<<< HEAD
+    "name": "Stefan Paulsson 181022"
+=======
+    "name": "Stefan Paulsson 181022"
+>>>>>>> c64f2c0c00f2f8c03b99f4982105d5bc445672bf
   },
   "images": {
     "large": "./assets/images/large.jpg",
